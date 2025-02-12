@@ -11,17 +11,20 @@
     margin:0;
     padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    bordr:1px solid red;
+    
 }
+
 
 header {
     display:flex;
     justify-content: space-between;
+    align-items: center;
     background-color: var(--primary-color);
     height: 120px;
     padding:10px;
     position:fixed;
     width: 100vw;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -212,4 +215,73 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 1400px) {
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap:10px;
+      height: 180px;
+    }
+    .logo {
+        margin-left: 0px;
+    }
+    .header-links {
+        display: flex;
+        justify-content: space-around;
+    }
+    .hero {
+        gap:50px;
+        height:100vh;
+    }
+    .cards {
+        flex-wrap: wrap;
+    }
+    .informations {
+        height: calc(100vh - 180px);
+        gap:10px;
+    }
+}
+
+@media (max-width: 950px) {
+    header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: nowrap;
+      gap:10px;
+      height: 360px;
+      top:0;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin-top: 360px;
+    }
+
+    .logo {
+        margin-left: 0px;
+    }
+    .header-links {
+        display: flex;
+        flex-direction: column;
+        gap:5px;
+        margin:0px;
+    }
+
+    .informations {
+        height: auto;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       height: 100%;
+    }
 }
