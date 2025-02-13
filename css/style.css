@@ -4,16 +4,13 @@
     --third-color:#3882F6;
     --quote-bg:#E5E7EB;
     --quote-text:#1F2937;
-
 }
 
 *, *::before, *::after {
     margin:0;
     padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
 }
-
 
 header {
     display:flex;
@@ -56,7 +53,6 @@ header {
     font-weight: 900;
     max-width: 250px;
 }
-
 
 .link, .book-button {
     font-size: 24px;
@@ -253,19 +249,22 @@ footer {
       justify-content: center;
       flex-wrap: nowrap;
       gap:10px;
-      height: 360px;
+      height: auto;
       top:0;
+      position:static;
+      padding-bottom: 20px;
     }
 
     .hero {
         display: flex;
         flex-direction: column;
-        height: 100vh;
-        margin-top: 360px;
+        height: auto;
+        padding-bottom: 20px;
     }
 
     .logo {
         margin-left: 0px;
+        font-size: 24px;
     }
     .header-links {
         display: flex;
@@ -276,6 +275,7 @@ footer {
 
     .informations {
         height: auto;
+        padding: 20px 0;
     }
 
     .cards {
@@ -283,5 +283,36 @@ footer {
         flex-direction: column;
         align-items: center;
        height: 100%;
+    }
+
+    .link, .book-button, .join-us {
+        font-size: 18px;
+        padding:4px 14px;
+        min-width:160px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .quote {
+        font-size: 36px;
+    }
+
+    .container {
+        margin:0px 20px;
     }
 }
